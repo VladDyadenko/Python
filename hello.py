@@ -108,6 +108,64 @@
 # print(res)
 
 
+#Задача 4.1
+# def computepay(h, r):
+#     rateUp = float(r*1.5)
+#     if h<= 40 :
+#       earn=h*rate
+#     else:
+#       earn = (r*40) + (h-40)*rateUp
+#     return print("Pay", earn)
+ 
 
+# hrs = input("Enter Hours:")
+# try:
+#  h = float(hrs)   
+# except:
+#    print("Введіть число")
+#    quit()
+# rate = input("Enter Rate:")
+# try:
+#    rate= float(rate)   
+# except:
+#    print("Введіть число")
+#    quit()
+# p = computepay(h, rate)
+
+# import random
+# for i in range(10):
+#     x = random.random()
+#     print(x)
     
 
+# while True:
+#     line = input('>')
+#     if line[0]== "#":
+#         continue
+#     if line == "done":
+#         break
+#     print(line)
+# print("Done!")
+
+largest = None
+smallest = None
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:
+     num=int(num)
+    except:
+       print("Invalid input")
+       continue
+    if smallest is None:
+       smallest = num
+    if smallest > num:
+       smallest = num
+    else :
+       if largest is None:
+          largest = num
+       if largest < num:
+         largest = num
+print("Maximum is", largest)
+print("Minimum is", smallest)
